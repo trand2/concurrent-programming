@@ -1,4 +1,4 @@
-# concurrent-programming
+# Concurrent Programming
 
 You will be downloading GIFs for flags from all the countries in the world from a public CIA website. The files appear in the following folder: 
 
