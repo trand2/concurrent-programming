@@ -12,10 +12,10 @@ xx-lgflag.gif
 where xx stands for the 2-character country code. For example, the GIF for the United States is us-lgflag.gif. The codes are in the file flags.py.
 
 Write three similar scripts that do the following: 
-•	Download all flag files into a directory named flags 
-•	Report the number of bytes downloaded 
-•	Report the execution time of the script (time.time()) 
-•	Report the CPU time of the script (time.process_time()) 
+-	Download all flag files into a directory named flags 
+-	Report the number of bytes downloaded 
+-	Report the execution time of the script (time.time()) 
+-	Report the CPU time of the script (time.process_time()) 
 
 The three versions will use the following schemes for downloading: 
 1.	Download sequentially (no concurrency) seq.py 
