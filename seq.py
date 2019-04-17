@@ -12,7 +12,7 @@ for flagCode in flags:
     # Download all flag files into a directory named flags
     urllib.request.urlretrieve(url, "flags/" + flagFile)
     numBytes += os.path.getsize("flags/" + flagFile)
-    print(flagFile)
+    # print(flagFile)
     i += 1
 
 timeStop, cpuStop = time.time(), time.process_time()

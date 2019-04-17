@@ -14,7 +14,7 @@ def downloadImages(flagCode):
     urllib.request.urlretrieve(url, "flags/" + flagFile)
     numBytes.append(os.path.getsize("flags/" + flagFile))
     i += 1
-    print(flagFile)
+    # print(flagFile)
     return numBytes
 
 

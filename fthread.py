@@ -3,6 +3,10 @@ from flags import flags
 import concurrent.futures
 import time
 import os
+# import smtplib
+# from email.mime.multipart import MIMEMultipart
+# from email.mime.text import MIMEText
+# from email.mime.application import MIMEApplication
 
 def downloadImages(flagCode):
     numBytes = []
@@ -13,7 +17,7 @@ def downloadImages(flagCode):
     urllib.request.urlretrieve(url, "flags/" + flagFile)
     numBytes.append(os.path.getsize("flags/" + flagFile))
     i += 1
-    print(flagFile)
+    # print(flagFile)
     return numBytes
 
 
@@ -39,3 +43,28 @@ if __name__ == '__main__':
             % (totalBytes, format(totalTime, '.2f'), format(cpuTotal, '.2f')))
 
     f.close()
+
+    # # Fixed part of email message
+    # subject = "Homework 8"
+    # sender = "tylerrandolph123@gmail.com"
+    #
+    # # Read text part
+    # # with open("msg.txt") as f:
+    # text = "Here you go, Professor Durney!"
+    #
+    # # Read Excel file to attach
+    # with open("flags/us-lgflag.gif", "rb") as f:
+    #     part = MIMEApplication(f.read())  # Container for parts consisting of raw bytes (binary files)
+    #     part.add_header('Content-Disposition', 'attachment; filename=us-lgflag.gif')
+    #
+    # to = 'bdurney1@gmail.com'
+    # msg = MIMEMultipart()
+    # msg['Subject'] = subject
+    # msg['From'] = sender
+    # msg['To'] = to
+    # msg.attach(MIMEText(text))
+    # msg.attach(part)
+    # s = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+    # s.login("tylerrandolph123@gmail.com", "*********")
+    # s.sendmail(sender, to, msg.as_string())
+    # s.quit()

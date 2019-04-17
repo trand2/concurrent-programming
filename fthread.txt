@@ -1,3 +1,3 @@
 Bytes downloaded 3110197 bytes
-Time: 10.53 seconds
-CPU Time: 7.61 seconds
+Time: 7.54 seconds
+CPU Time: 7.55 seconds
